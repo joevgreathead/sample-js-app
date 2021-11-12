@@ -1,0 +1,11 @@
+{
+  "name": "sample-js-app",
+  "version": "1.0.0",
+  "description": "A sample JS/Client side only app to showcase sample app structure and package inclusion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Greathead",
+  "license": "MIT"
+}
