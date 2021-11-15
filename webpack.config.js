@@ -6,6 +6,17 @@ module.exports = {
 		app: './src/index.js',
 	},
 	mode: 'development',
+	module: {
+		rules: [{
+			test: /\.(jsx|js)$/,
+			include: path.resolve(__dirname, 'src'),
+			exclude: /node_modules/,
+			use: ['babel-loader']
+		}]
+	},
+	resolve: {
+		extensions: ['*', '.js', '.jsx']
+	},
 	output: {
 		clean: true,
 		filename: '[name].bundle.[contenthash].js',

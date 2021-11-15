@@ -8,20 +8,31 @@ Running the following:
 
 ```bash
 # everything from previous steps, plus...
-# install the webpack library
-~/sample-js-app > npm add -D webpack
-~/sample-js-app > npm add -D webpack-cli
-# install a webpack plugin which will put src links in our html file for us
-~/sample-js-app > npm add -D html-webpack-plugin
-# install the web pack dev server to run builds locally and serve our site as if it was real
-~/sample-js-app > npm add -D webpack-dev-server
-~/sample-js-app > npm install
+# install the react libraries
+~/sample-js-app > npm add react
+~/sample-js-app > npm add react-dom
+# install babel libraries, which are used to transpile react into js
+~/sample-js-app > npm add -D babel-loader @babel/preset-react
 ```
 
-- Create a `src/template.html` file. This is the basis of our website. We'll either use JavaScript to build the interface dynamically (like with React) or add static HTML here to manipulate later.
-- Write some code in `src/index.js` to do stuff to the page.
-- Create a `webpack.config.js` file. This tells the `webpack-dev-server` and the `webpack` command what to do with our javascript and html files when developing locally and when building artifacts for production servers.
-- Add some commands to `package.json` such as `build` and `start` which will build artifacts for production and start our local development server which produces our site locally.
+- Add react libraries required to start running and building things using React.
+- Add Babel libraries required to turn React code into js.
+- Add webpack configuration to send React code through Babel.
+- Add Babel configuration to package.json.
+- Add some new React code in the form of ReactDOM.render which puts our App component on the page when the page loads.
+- Add a very simple App component which is the start of our application.
+
+## Available Commands
+
+```
+npm run start
+```
+Starts the local web server.
+
+```
+npm run build
+```
+Builds a set of deployable assets including a JavaScript bundle and matching index.html.
 
 ## What comes after?
 
