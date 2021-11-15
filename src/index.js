@@ -1,7 +1,8 @@
-const $ = require('jquery');
+const $ = require("jquery");
 
-$('#root').css('height', '100px');
-$('#root').css('width', '100px');
-$('#root').css('background-color', 'blue');
+const pTag = document.createElement("p");
+pTag.append("This text comes from the main index.js file");
+
+$("#root").append(pTag);
 
 console.log("Hell o' a world. Let's make it red.");
