@@ -9,19 +9,23 @@ Running the following:
 ```bash
 # everything from previous steps, plus...
 # install the webpack library
-~/sample-js-app > npm add -D webpack
-~/sample-js-app > npm add -D webpack-cli
-# install a webpack plugin which will put src links in our html file for us
-~/sample-js-app > npm add -D html-webpack-plugin
-# install the web pack dev server to run builds locally and serve our site as if it was real
-~/sample-js-app > npm add -D webpack-dev-server
-~/sample-js-app > npm install
+~/sample-js-app > npm add -D jquery
 ```
 
-- Create a `src/template.html` file. This is the basis of our website. We'll either use JavaScript to build the interface dynamically (like with React) or add static HTML here to manipulate later.
-- Write some code in `src/index.js` to do stuff to the page.
-- Create a `webpack.config.js` file. This tells the `webpack-dev-server` and the `webpack` command what to do with our javascript and html files when developing locally and when building artifacts for production servers.
-- Add some commands to `package.json` such as `build` and `start` which will build artifacts for production and start our local development server which produces our site locally.
+- Import jQuery into `src/index.js` to make sure jQuery is working as expected.
+- Now the application can be built using just jQuery and HTML/CSS.
+
+## Available Commands
+
+```
+npm run start
+```
+Starts the local web server.
+
+```
+npm run build
+```
+Builds a set of deployable assets including a JavaScript bundle and matching index.html.
 
 ## What comes after?
 
