@@ -10,9 +10,6 @@
   },
   "author": "Joe Greathead",
   "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.6.0"
-  },
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.64.0",

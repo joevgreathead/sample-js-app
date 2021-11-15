@@ -8,8 +8,6 @@ Running the following:
 
 ```bash
 # everything from previous steps, plus...
-# install jquery
-~/sample-js-app > npm add jquery
 # install the webpack library
 ~/sample-js-app > npm add -D webpack
 ~/sample-js-app > npm add -D webpack-cli
