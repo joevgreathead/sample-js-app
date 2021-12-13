@@ -1,6 +1,6 @@
 # Sample JS App
 
-## Whatever!
+## A new update to pull in!
 
 This is a sample JS app to show off a few things like npm usage and app structure.
 
