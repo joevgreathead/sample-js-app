@@ -1,5 +1,7 @@
 # Sample JS App
 
+## Whatever!
+
 This is a sample JS app to show off a few things like npm usage and app structure.
 
 Each branch in this repo is a next step in the path. After this comes `step-01`. Steps 2 and onwards branch in two different directions. Both have the value of:
