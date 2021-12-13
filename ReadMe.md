@@ -1,6 +1,6 @@
 # Sample JS App
 
-## Some placement header for conflict
+## Whatever!
 
 This is a sample JS app to show off a few things like npm usage and app structure.
 
